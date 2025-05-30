@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThisWeather</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <input type="text" placeholder="California" class="search-input" id="searchInput">
-        <button class="search" onclick="buscarClima()">Buscar</button>
-    </header>
+        <div class="search-container">
+            <input type="text" placeholder="California" class="city-input" id="city-input">
+            <button class="search-button" onclick="searchWeather()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        </header>
     <main>
         <div class="container">
-            <h1>Previsão do tempo</h1>
-            <div class="card">
+            <div class="result">
                 <h2 class="city-name">Nome da cidade</h2>
                 <p class="city-temperature">Temperatura: 25°C</p>
                 <p class="city-condition">Condições: Ensolarado</p>
@@ -26,5 +28,6 @@
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

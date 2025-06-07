@@ -7,12 +7,12 @@ async function searchWeather() {
         return;
     }
 
-    const apiKey = "SUA_API_KEY_AQUI"; // Substitua pela sua chave de API no OpenWeather
+    const apiKey = "SUA_API_KEY"; // Substitua pela sua chave de API no OpenWeather
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=pt_br&units=metric`;
 
     try {
-        const reposta = await fetch(url);
-        if (!reposta.ok) {
+        const resposta = await fetch(url);
+        if (!resposta.ok) {
             throw new Error('Cidade não encontrada');
         }
 
